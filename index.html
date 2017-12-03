@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<title>Andrew Sealy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../Portfolio/photo.jpg');
+        min-height: 100%;
+    }
+</style>
+
+<head>
+        <link href="../Portfolio/photo.jpg" />
+</head>
+
+<body>
+
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+            <a href="#education" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Education</a>
+            <a href="#experience" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Experience</a>
+            <a href="#skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Skills</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+            <a href="#volunteering" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Volunteering</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </span>
+
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo">
+                <b>Andrew Sealy</b>
+            </h1>
+            <p>Computer Science Student & Intern</p>
+            <a href="https://www.linkedin.com/in/andrew-sealy-1a335ab5" target="_blank">
+                <i class="fa fa-linkedin-square fa-2x w3-hover-opacity" style="color:black"></i></a>
+            <a href="https://github.com/ASealy" target="_blank">
+                <i class="fa fa-github-square fa-2x w3-hover-opacity" style="color:black" target="_blank"></i></a>
+            <a href="mailto:an243281@dal.ca">
+                <i class="fa fa-envelope fa-2x w3-hover-opacity" style="color:black" aria-hidden="true"></i></a>
+            <a href="https://play.google.com/store/apps/developer?id=Andrew+Sealy" target="_blank">
+                <i class="fa fa-android fa-2x w3-hover-opacity" style="color:black" aria-hidden="true"></i></a>
+        </header>
+
+        <!-- About -->
+        <div class="w3-padding-32 w3-content" id="about">
+            <h2 class="w3-text-grey">About</h2>
+            <hr class="w3-opacity">
+            <p>Andrew is a 4th year Computer Science student at Dalhousie University. Andrew has previously worked as a Software
+                Developer at Health QR where he contributed to the ongoing development of a medication management application
+                for prescription patients. Andrew has most recently worked as a Business Technology Analyst at Deloitte.
+                There, he was involved in several client engagements as a member of the technology consultancy. Through his
+                academic and professional career, Andrew has gained experience in several modern development frameworks and
+                programming languages and he specializes in the development of web applications. Andrew is also involved
+                with several volunteering engagements throughout his community including Halifax Youth Council and Halifax
+                Street Soccer. Andrew was recently the recipient of the Leadership Award for Social Responsibility from Deloitte’s
+                Business Analysts Action Committee.
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div class="w3-padding-32 w3-content" id="education">
+            <h2 class="w3-text-grey">Education</h2>
+            <hr class="w3-opacity">
+
+
+            <h4>Dalhousie University (2013 – 2018)</h4>
+
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Dean's List, Sexton Scholar Designation</p>
+
+            <br>
+            <h4>International Baccalaureate Diploma Programme (2010-2013)</h4>
+
+        </div>
+
+        <!-- Experience -->
+        <div class="w3-padding-32 w3-content" id="experience">
+            <h2 class="w3-text-grey">Experience</h2>
+            <hr class="w3-opacity">
+
+            <h4>Deloitte - Business Technology Analyst (January 2017 – December 2017)</h4>
+
+            <p>Involved in several client engagements as a member of the technology consultancy in sectors ranging from financial
+                services to health technology
+            </p>
+            <p>Contributed to a large-scale transformation engagement for a major Canadian insurance provider</p>
+            <p>Contributed to the planning and development of several web-based modernization engagements</p>
+
+            <br>
+            <h4>Health QR - Software Developer (May 2016 – August 2016)</h4>
+
+            <p>Contributed to the ongoing development of a medication management solution
+            </p>
+            <p>Developed several functional components using JavaScript, AngularJS and Java</p>
+            <p>Effectively communicated with the team in an agile environment</p>
+        </div>
+
+        <!-- Skills -->
+        <div class="w3-padding-32 w3-content" id="skills">
+            <h2 class="w3-text-grey">Skills</h2>
+            <hr class="w3-opacity">
+
+            <h4>Programming Languages</h4>
+            <p>Java, C, C++, JavaScript, AngularJS, HTML, CSS, SQL</p>
+
+            <br>
+            <h4>Development Tools & Frameworks</h4>
+            <p>Eclipse, Microsoft Visual Studio, Android Studio, Ionic Framework, Google Firebase, Backand, D3, Atlassian Suite,
+                Microsoft Office Suite
+            </p>
+        </div>
+
+        <!-- Projects -->
+        <div class="w3-padding-32 w3-content" id="projects">
+            <h2 class="w3-text-grey">Projects</h2>
+            <hr class="w3-opacity">
+
+            <h4>Amino -
+                <a href="https://play.google.com/store/apps/details?id=com.andrewsealy.amino" target="_blank">
+                    <i class="fa fa-android" style="color:black" aria-hidden="true"></i>
+                </a>
+            </h4>
+            <p>A mobile application that implements a search algorithm to detect amino acids in a DNA sequence</p>
+
+            <br>
+            <h4>Nova Scotia Wildlife -
+                <a href="https://play.google.com/store/apps/details?id=com.andrewsealy.novascotiawildlife" target="_blank">
+                    <i class="fa fa-android" style="color:black" aria-hidden="true"></i>
+                </a>
+            </h4>
+            <p>A mobile application to display information about wildlife found throughout Nova Scotia, Canada</p>
+
+            <br>
+            <h4>Lango -
+                <a href="https://play.google.com/store/apps/details?id=com.andrewsealy.langotravelapp" target="_blank">
+                    <i class="fa fa-android" style="color:black" aria-hidden="true"></i>
+                </a>
+            </h4>
+            <p>A mobile application to assist international travelers by translating common travel phrases</p>
+
+
+
+
+        </div>
+
+        <!-- Volunteering -->
+        <div class="w3-padding-32 w3-content" id="volunteering">
+            <h2 class="w3-text-grey">Volunteering Engagements</h2>
+            <hr class="w3-opacity">
+
+            <h4>Halifax Street Soccer (2013 – Present)</h4>
+
+            <p>Coordinator of this non-profit organization which aims to develop the homeless community by using sport for health
+                and wellness
+            </p>
+            <p>Manager of the social media page; responsible for communicating with other coordinators and providing schedule
+                updates to several hundred community members
+            </p>
+
+            <br>
+
+            <h4>Halifax Youth Council (2016 – 2017)</h4>
+
+            <p>One of twenty youth from Halifax selected to meet regularly with our Member of Parliament to discuss issues facing
+                youth throughout our community
+            </p>
+
+            <br>
+
+            <h4>Business Analyst Action Committee, Deloitte (2017)</h4>
+
+            <p>Member of this committee which engages in several local volunteering events
+            </p>
+            <p>
+                Recipient of Leadership Award for Social Responsibility
+            </p>
+
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+            <a href="https://www.linkedin.com/in/andrew-sealy-1a335ab5" target="_blank">
+                <i class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+            <a href="https://github.com/ASealy" target="_blank">
+                <i class="fa fa-github-square w3-hover-opacity" target="_blank"></i></a>
+            <a href="mailto:an243281@dal.ca">
+                <i class="fa fa-envelope w3-hover-opacity" aria-hidden="true"></i></a>
+            <a href="https://play.google.com/store/apps/developer?id=Andrew+Sealy" target="_blank">
+                <i class="fa fa-android w3-hover-opacity" aria-hidden="true"></i></a>
+            <p class="w3-medium">Updated December 2017</p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+        // Open and close sidebar
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
